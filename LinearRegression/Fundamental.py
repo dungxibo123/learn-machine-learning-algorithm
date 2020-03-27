@@ -16,17 +16,17 @@ def costFunction(X,Y,theta):
     return J*(1/2*np.size(X,0))
 
 
-# def valueCostFunction(X,Y,theta):
-#     X = np.append([[1]]*np.size(X,0),X,1)
-#     m = np.size((Y,0))
-#     n = len(X[0,:])
-#     J = 0
-#     for i in range(1,m):
-#         J += np.sum(hypothesis(X,Y,theta)**2)
-#     J /= 2*m
-#     return J
-# def deritativeCostFunction(X,Y,theta):
-#     pass
+    # def valueCostFunction(X,Y,theta):
+    #     X = np.append([[1]]*np.size(X,0),X,1)
+    #     m = np.size((Y,0))
+    #     n = len(X[0,:])
+    #     J = 0
+    #     for i in range(1,m):
+    #         J += np.sum(hypothesis(X,Y,theta)**2)
+    #     J /= 2*m
+    #     return J
+    # def deritativeCostFunction(X,Y,theta):
+    #     pass
 
 
 def GradientDescent(X,Y, alpha = 0.003,iter = 5000):
@@ -36,7 +36,7 @@ def GradientDescent(X,Y, alpha = 0.003,iter = 5000):
     J_hist = np.zeros((iter,2))
     theta = np.array([[0]]*n)
     preCost = costFunction(X,Y,theta)
-    
+
     for i in range(500):
         theta = theta - (alpha / m) * (np.transpose(X)@(X@theta - Y))
         cost = costFunction(X,Y,theta)
