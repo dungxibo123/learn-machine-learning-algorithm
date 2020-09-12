@@ -28,9 +28,18 @@ def costFunction(X,Y,theta):
     # def deritativeCostFunction(X,Y,theta):
     #     pass
 
-
-def GradientDescent(X,Y, alpha = 0.003,iter = 5000):
+def Normalization(x):
+    _max = np.empty((1,x.shape[1]))
+    for i in range(x.shape[1]):
+        _max[0,i] = max(abs(x[:,i].max()),abs(x[:,i].min()))
+    for i in range (x.shape[1]):
+        x[:,i] = x[:,i] / max(abs(x[:,i].max()),abs(x[:,i].min()))
+    return x,_max
+def GradientDescent(X,Y, alpha = 0.0005,iter = 5000):
+    X, _maxX = Normalization(X)
+    Y, _maxY = Normalization(Y)
     X = np.append([[1]]*np.size(X,0),X,1) #check
+    print('_maxX:\n',_maxX)
     m = np.size(X,0) #check
     n = np.size(X,1)
     J_hist = np.zeros((iter,2))
@@ -51,5 +60,10 @@ def GradientDescent(X,Y, alpha = 0.003,iter = 5000):
             J_hist[i,1] = cost
             J_hist[i,0] = i
             preCost = cost
+    #print(theta)
+    for i in range(_maxX.shape[1]):
+        theta[1:,i] *= _maxX[0,i]
+    #print(theta)
+
     yield theta
     yield J_hist
