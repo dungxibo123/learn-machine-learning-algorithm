@@ -36,10 +36,10 @@ def Normalization(x):
     for i in range (x.shape[1]):
         x[:,i] = x[:,i] / max(abs(x[:,i].max()),abs(x[:,i].min()))
     return x,_max
-def GradientDescent(X,Y, alpha = 0.0005,iter = 10000):
+def GradientDescent(X,Y, alpha = 0.0005,iter = 1000000):
     X, _maxX = Normalization(X)
     Y, _maxY = Normalization(Y)
-    X = np.append([[1]]*np.size(X,0),X,1) #check
+    X = np.append([[0.39]]*np.size(X,0),X,1) #check
     print('_maxX:\n',_maxX)
     m = np.size(X,0) #check
     n = np.size(X,1)
@@ -47,7 +47,7 @@ def GradientDescent(X,Y, alpha = 0.0005,iter = 10000):
     theta = np.array([[0]]*n)
     preCost = costFunction(X,Y,theta)
 
-    for i in range(250):
+    for i in range(500):
         theta = theta - (alpha / m) * (np.transpose(X)@(X@theta - Y))
         cost = costFunction(X,Y,theta)
         if np.round(cost,15) == np.round(preCost,15):

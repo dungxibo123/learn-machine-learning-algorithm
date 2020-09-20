@@ -21,7 +21,7 @@ needPredict = np.array([1,17])
 # [theta,J_hist] = GradientDescent(X,Y,alpha)
 #theta = np.array([[0]]*n)
 
-[theta, Jhist] = GradientDescent(X,Y)
+[theta, Jhist] = GradientDescent(X,Y,alpha =0.001)
 
 #print(X,Y,sep='\n')
 print(theta)
