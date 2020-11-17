@@ -53,6 +53,8 @@ col = {1:'blue', -1:'red'}
 for i in range(feature_and_label.shape[0]):
     plt.scatter(feature_and_label[i,1],feature_and_label[i,2], color=col[feature_and_label[i,3]])
 
-for i in range(100):
-    plt.scatter(i/100,(-w[0]-w[1]*i / 100) / w[2])
+x_coor = [i/100 for i in range(101)]
+y_coor = [(-w[0] - w[1]*i)/w[2] for i in x_coor]
+plt.plot(x_coor,y_coor)
 plt.show()
+
