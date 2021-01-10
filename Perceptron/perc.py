@@ -11,7 +11,7 @@ def sgn(x,w):
 def distance(x,w):
     return np.sum(x.T@w)
 
-feature_and_label = np.loadtxt('DATA.txt', delimiter=',')
+feature_and_label = np.loadtxt('data1.txt', delimiter=',')
 #print | to check
 #print(feature_and_label)
 
@@ -32,7 +32,7 @@ print(w)
 ite = 0
 coverged = np.count_nonzero(feature_and_label[:,-1] == 1)
 print(coverged)
-while coverged != 0 and ite < 300:
+while coverged != 0 and ite < 300000:
     print(w)
     print(feature_and_label, end ='\n\n\n\n\n')
     feature_and_label = np.random.permutation(feature_and_label)
