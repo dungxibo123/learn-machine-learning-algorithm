@@ -15,6 +15,9 @@
 | **[Steve Brunton][sb-math]** | Explain Mathematics behind ML Algorithms |
 | **[Harvard Statistics][hv-stat]** | Havard's Statistic Book |
 | **[Dive into Deep Learning][d2l-book]** | Deep Learning from Scratch |
+| **[DATA DRIVEN SCIENCE & ENGINEERING][datauw-book]** | Data ~ ML ~ Dynamical Systems and Control  |
+| **[Machine Learning Cơ bản][ml-basic]** | (VIE) Basic machine learning algorithm, best to start with one does not so well in English |
+| **[Deep Learning cơ bản][dl-basic]** | (VIE) Basic in Deep Learning, Image Regconition, Image Segmentation, Generative Adversarial Networks (GAN), and so on,... |
 | `Updating...` | `...` |
 
 > `Above is our link to specific content, we have not used them so much until now, so my briefly word cannot describe exactly what those site bring to you.`
@@ -31,6 +34,9 @@ Those materials still updating,...
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+   [dl-basic]: <https://nttuan8.com/>
+   [datauw-book]: <http://databookuw.com>
+   [ml-basic]: <https://machinelearningcoban.com/>
    [hv-stat]: <http://probabilitybook.net/>
    [d2l-book]: <https://d2l.ai/>
    [phantah1]: <https://github.com/phantah1>
