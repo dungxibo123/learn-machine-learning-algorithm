@@ -20,7 +20,7 @@
 | **[Deep Learning cơ bản][dl-basic]** | (VIE) Basic in Deep Learning, Image Regconition, Image Segmentation, Generative Adversarial Networks (GAN), and so on,... |
 | `Updating...` | `...` |
 
-> `Above is our link to specific content, we have not used them so much until now, so my briefly word cannot describe exactly what those site bring to you.`
+> `Above is our link to specific content, we have not used them so much until now, so my briefly word cannot describe exactly what those sites bring to you.`
 
 > `Maybe we dont have to much materials, feel free to contribute to this file by making new PR, please`
 
