@@ -18,6 +18,9 @@
 | **[DATA DRIVEN SCIENCE & ENGINEERING][datauw-book]** | Data ~ ML ~ Dynamical Systems and Control  |
 | **[Machine Learning Cơ bản][ml-basic]** | (VIE) Basic machine learning algorithm, best to start with one does not so well in English |
 | **[Deep Learning cơ bản][dl-basic]** | (VIE) Basic in Deep Learning, Image Regconition, Image Segmentation, Generative Adversarial Networks (GAN), and so on,... |
+| **[Pytorch Deep Learning][pytorch-dl]** | Deep learning in pytorch |
+| **[UC Berkeley CS194-080 Full Stack Deep Learning][cs194-080]** | UC Berkeley Courses, full stack DL |
+
 | `Updating...` | `...` |
 
 > `Above is our link to specific content, we have not used them so much until now, so my briefly word cannot describe exactly what those sites bring to you.`
@@ -47,3 +50,5 @@ Those materials still updating,...
    [3b1b]: <https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw>
    [2minpaper]: <https://www.youtube.com/user/keeroyz>
    [sb-math]: <https://www.youtube.com/channel/UCm5mt-A4w61lknZ9lCsZtBw>
+   [cs194-080]: <https://docs.google.com/document/d/e/2PACX-1vSSSHcahlrJRvVq4qRKDX2jYLjhgpbWZjqmDcWZ7w3FWItZrlSKw6GY7rcSj5ZkJr6M0DaR8QbKCd8S/pub>
+   [pytorch-dl]: <https://atcold.github.io/pytorch-Deep-Learning/>
